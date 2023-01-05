@@ -21,4 +21,17 @@ function minMax(arr) {
     minMax([2334454, 5]) return [5, 2334454]
     minMax([1]) return [1, 1]
     */
+   let newArray = [];
+   let min = arr[0];
+   let max = arr[0];
+   for (let i = 1; i < arr.length; i++) {
+    if (arr[i] < min) {
+        min = arr[i];
+    }
+    if (arr[i] > max) {
+        max = arr[i];
+    }
+   }
+   newArray.push(min, max);
+   return newArray;
 }
