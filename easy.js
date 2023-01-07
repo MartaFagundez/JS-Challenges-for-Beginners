@@ -20,3 +20,16 @@ function minMax(arr) {
     minMax([1]) return [1, 1]
     */
 }
+
+function matchHouses(step) {
+    /*
+    Source: https://edabit.com/challenge/tYHkTdFrEmWfxpPKF
+    This challenge will help you interpret mathematical relationships both algebraically and geometrically.
+    Create a function that takes a number (step) as an argument and returns the number of matchsticks in that step. 
+    See step 1, 2 and 3 in this image: https://edabit-challenges.s3.amazonaws.com/matchstick_houses.png
+    Examples: 
+    matchHouses(1) return 6
+    matchHouses(4) return 21
+    matchHouses(87) return 436
+    */
+}
