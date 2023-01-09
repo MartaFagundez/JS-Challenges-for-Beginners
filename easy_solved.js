@@ -57,3 +57,25 @@ function sumOfCubes(arr) {
     arr.forEach(element => sum += Math.pow(element, 3));
     return sum;
 }
+
+
+function repetition(txt, n) {
+	/*
+    Source: https://edabit.com/challenge/MjqneMZ7aZa8AxXZG
+    Create a recursive function that takes two parameters and repeats the string n number of times. 
+    The first parameter txt is the string to be repeated and the second parameter is the number of times 
+    the string is to be repeated.
+    String.prototype.repeat() is not allowed.
+    Examples:
+    repetition("ab", 3) returns "ababab"
+    repetition("kiwi", 1) returns "kiwi"
+    repetition("cherry", 2) returns "cherrycherry"
+     */
+    // 1) base case of recursion to stop calling itself
+    if (n === 1) {
+        return txt;
+    // 2) recursivly calling itself with new value 
+    } else {
+        return txt + repetition(txt, n-1);
+    }
+}
