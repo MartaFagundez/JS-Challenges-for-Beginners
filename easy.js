@@ -33,3 +33,17 @@ function matchHouses(step) {
     matchHouses(87) return 436
     */
 }
+
+
+function sumOfCubes(arr) {
+    /*
+    Source: https://edabit.com/challenge/XdAR3KohR5w7rjrFg
+    Create a function that takes in an array of numbers and returns the sum of its cubes.
+    Examples:
+    sumOfCubes([1, 5, 9]) return 855
+    Since 1^3 + 5^3 + 9^3 = 1 + 125 + 729 = 855
+    sumOfCubes([3, 4, 5]) return 216
+    sumOfCubes([2]) return 8
+    sumOfCubes([]) return 0
+    */
+}
