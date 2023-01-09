@@ -15,9 +15,9 @@ function minMax(arr) {
     Create a function that takes an array of numbers and return both the minimum and maximum numbers, 
     in that order.
     Examples:
-    minMax([1, 2, 3, 4, 5]) return [1, 5]
-    minMax([2334454, 5]) return [5, 2334454]
-    minMax([1]) return [1, 1]
+        minMax([1, 2, 3, 4, 5]) return [1, 5]
+        minMax([2334454, 5]) return [5, 2334454]
+        minMax([1]) return [1, 1]
     */
 }
 
@@ -28,9 +28,9 @@ function matchHouses(step) {
     Create a function that takes a number (step) as an argument and returns the number of matchsticks in that step. 
     See step 1, 2 and 3 in this image: https://edabit-challenges.s3.amazonaws.com/matchstick_houses.png
     Examples: 
-    matchHouses(1) return 6
-    matchHouses(4) return 21
-    matchHouses(87) return 436
+        matchHouses(1) return 6
+        matchHouses(4) return 21
+        matchHouses(87) return 436
     */
 }
 
@@ -40,11 +40,11 @@ function sumOfCubes(arr) {
     Source: https://edabit.com/challenge/XdAR3KohR5w7rjrFg
     Create a function that takes in an array of numbers and returns the sum of its cubes.
     Examples:
-    sumOfCubes([1, 5, 9]) return 855
-    Since 1^3 + 5^3 + 9^3 = 1 + 125 + 729 = 855
-    sumOfCubes([3, 4, 5]) return 216
-    sumOfCubes([2]) return 8
-    sumOfCubes([]) return 0
+        sumOfCubes([1, 5, 9]) return 855
+        Since 1^3 + 5^3 + 9^3 = 1 + 125 + 729 = 855
+        sumOfCubes([3, 4, 5]) return 216
+        sumOfCubes([2]) return 8
+        sumOfCubes([]) return 0
     */
 }
 
@@ -57,8 +57,24 @@ function repetition(txt, n) {
     the string is to be repeated.
     String.prototype.repeat() is not allowed.
     Examples:
-    repetition("ab", 3) returns "ababab"
-    repetition("kiwi", 1) returns "kiwi"
-    repetition("cherry", 2) returns "cherrycherry"
+        repetition("ab", 3) returns "ababab"
+        repetition("kiwi", 1) returns "kiwi"
+        repetition("cherry", 2) returns "cherrycherry"
      */
+}
+
+
+function cardHide(card) {
+	/*
+    Source: https://edabit.com/challenge/rtpvAqFT3koqMoFCJ
+    Write a function that takes a credit card number and only displays the last four characters. 
+    The rest of the card number must be replaced by ************.
+    Examples:
+        cardHide("1234123456785678") ➞ "************5678"
+        cardHide("8754456321113213") ➞ "************3213"
+        cardHide("35123413355523") ➞ "**********5523"
+    Notes: 
+        Ensure you return a string.
+        The length of the string must remain the same as the input.
+    */
 }

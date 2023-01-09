@@ -74,8 +74,27 @@ function repetition(txt, n) {
     // 1) base case of recursion to stop calling itself
     if (n === 1) {
         return txt;
-    // 2) recursivly calling itself with new value 
+    // 2) recursively calling itself with new value 
     } else {
         return txt + repetition(txt, n-1);
     }
+}
+
+
+function cardHide(card) {
+	/*
+    Source: https://edabit.com/challenge/rtpvAqFT3koqMoFCJ
+    Write a function that takes a credit card number and only displays the last four characters. 
+    The rest of the card number must be replaced by ************.
+    Examples:
+        cardHide("1234123456785678") ➞ "************5678"
+        cardHide("8754456321113213") ➞ "************3213"
+        cardHide("35123413355523") ➞ "**********5523"
+    Notes: 
+        Ensure you return a string.
+        The length of the string must remain the same as the input.
+    */
+   let numbers = card.slice(-4);
+   let asterisks = card.slice(0, -4).replace(/[0-9]/g, "*");
+   return asterisks.concat("", numbers);
 }
