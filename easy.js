@@ -93,3 +93,15 @@ function findLargestNums(arr) {
         Watch out for negative integers (numbers).
     */
 }
+
+
+function countVowels(str) {
+	/*
+    Source: https://edabit.com/challenge/3EQGHyiYTNc9LPmhF
+    Create a function that takes a string and returns the number (count) of vowels contained within it.
+    Examples: 
+        countVowels("Celebration") ➞ 5
+        countVowels("Palm") ➞ 1
+        countVowels("Prediction") ➞ 4
+    */
+}

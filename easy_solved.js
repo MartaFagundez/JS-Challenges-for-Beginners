@@ -198,3 +198,18 @@ function findLargestNums(arr) {
     */
     return arr.map(element => Math.max(...element));
 }
+
+
+function countVowels(str) {
+	/*
+    Source: https://edabit.com/challenge/3EQGHyiYTNc9LPmhF
+    Create a function that takes a string and returns the number (count) of vowels contained within it.
+    Examples: 
+        countVowels("Celebration") ➞ 5
+        countVowels("Palm") ➞ 1
+        countVowels("Prediction") ➞ 4
+    */
+   const regexp = /[(aeiou]/gi;
+   // I use the ternary operator so that the function also works for strings that don't have vowels as well.
+   return (str.match(regexp) ? str.match(regexp).length : 0);
+}
