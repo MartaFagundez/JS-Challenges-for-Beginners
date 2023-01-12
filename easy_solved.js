@@ -213,3 +213,20 @@ function countVowels(str) {
    // I use the ternary operator so that the function also works for strings that don't have vowels as well.
    return (str.match(regexp) ? str.match(regexp).length : 0);
 }
+
+
+function tuckIn(arr1, arr2) {
+	/*
+    Source: https://edabit.com/challenge/7ysTEDruHz2prcJQ9
+    Create a function that takes two arrays and insert the second array in the middle of the first array.
+    Examples:
+        tuckIn([1, 10], [2, 3, 4, 5, 6, 7, 8, 9]) ➞ [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        tuckIn([15,150], [45, 75, 35]) ➞ [15, 45, 75, 35, 150]
+        tuckIn([[1, 2], [5, 6]], [[3, 4]]) ➞ [[1, 2], [3, 4], [5, 6]]
+    Notes:
+        The first array always has two elements.
+        Use the spread syntax to solve this challenge.
+    */
+   arr1.splice(1, 0, ...arr2);
+   return arr1;
+}
