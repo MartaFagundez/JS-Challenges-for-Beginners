@@ -230,3 +230,21 @@ function tuckIn(arr1, arr2) {
    arr1.splice(1, 0, ...arr2);
    return arr1;
 }
+
+
+function timeForMilkAndCookies(date) {
+	/*
+    Source: https://edabit.com/challenge/hPWnaSckJke5FXNEH
+    Christmas Eve is almost upon us, so naturally we need to prepare some milk and cookies for Santa! 
+    Create a function that accepts a Date object and returns true if it's Christmas Eve (December 24th) and false otherwise. 
+    Keep in mind JavaScript's Date month is 0 based, meaning December is the 11th month while January is 0.
+    Examples:
+        timeForMilkAndCookies(new Date(2013, 11, 24)) ➞ true
+        timeForMilkAndCookies(new Date(2013, 0, 23)) ➞ false
+        timeForMilkAndCookies(new Date(3000, 11, 24)) ➞ true
+    Notes:
+        Dates are zero based (see resources).
+        All test cases contain valid dates.
+    */
+   return date.getMonth() === 11 && date.getDate() === 24;
+}
