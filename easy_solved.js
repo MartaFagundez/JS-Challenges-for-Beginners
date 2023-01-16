@@ -274,3 +274,16 @@ function isFirstSuperior(arr1, arr2) {
     */
    return arr1.some((element, index) => element > arr2[index]);
 }
+
+
+function potatoes(str) {
+	/*
+    Source: https://edabit.com/challenge/u6iaymtE4eYXQ2ZWR
+    Create a function to return the amount of potatoes there are in a string.
+    Examples:
+        potatoes("potato") ➞ 1
+        potatoes("potatopotato") ➞ 2
+        potatoes("potatoapple") ➞ 1
+    */
+   return str.match(/potato/gi).length;
+}
