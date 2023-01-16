@@ -285,5 +285,5 @@ function potatoes(str) {
         potatoes("potatopotato") ➞ 2
         potatoes("potatoapple") ➞ 1
     */
-   return str.match(/potato/gi).length;
+   return str.match(/potato/gi || []).length;
 }
