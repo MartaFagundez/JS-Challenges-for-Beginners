@@ -59,6 +59,7 @@ function sumOfCubes(arr) {
 }
 
 
+// 1- Using if / else 
 function repetition(txt, n) {
 	/*
     Source: https://edabit.com/challenge/MjqneMZ7aZa8AxXZG
@@ -78,6 +79,23 @@ function repetition(txt, n) {
     } else {
         return txt + repetition(txt, n-1);
     }
+}
+
+
+// 2- Using ternary operator
+function repetition(txt, n) {
+	/*
+    Source: https://edabit.com/challenge/MjqneMZ7aZa8AxXZG
+    Create a recursive function that takes two parameters and repeats the string n number of times. 
+    The first parameter txt is the string to be repeated and the second parameter is the number of times 
+    the string is to be repeated.
+    String.prototype.repeat() is not allowed.
+    Examples:
+    repetition("ab", 3) returns "ababab"
+    repetition("kiwi", 1) returns "kiwi"
+    repetition("cherry", 2) returns "cherrycherry"
+     */
+    return n <= 0 ? "" : txt + repetition(txt, n-1);
 }
 
 
