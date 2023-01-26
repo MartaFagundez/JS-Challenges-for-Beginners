@@ -374,4 +374,13 @@ function amplify(num) {
         A number a amplified by a factor b can also be read as: a * b.
         A number a is exactly divisible by a number b when the remainder of the division a / b is equal to 0.
     */
+   let arr = [];
+   for (let i = 1; i <= num; i++) {
+    if (i % 4 === 0) {
+        arr.push(i*10);
+    } else {
+        arr.push(i);
+    }
+   }
+   return arr;
 }
