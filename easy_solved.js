@@ -422,3 +422,42 @@ function sortDrinkByPrice(drinks) {
     */
    return drinks.sort((firstItem, secondItem) => firstItem.price - secondItem.price);
 }
+
+
+// 1- Using if / else conditional statements
+function factorial(int) {
+	/*
+    Source: https://edabit.com/challenge/GW5kYFCvGWDZ6TRxd
+    Create a function that takes an integer and returns the factorial of that integer. 
+    That is, the integer multiplied by all positive lower integers.
+    Examples: 
+        factorial(3) ➞ 6
+        factorial(5) ➞ 120
+        factorial(13) ➞ 6227020800
+    Notes:
+        Assume all inputs are greater than or equal to 0.
+    */
+    // 1) base case of recursion to stop calling itself
+    if (int === 0) {
+        return 1;
+    // 2) recursively calling itself with new value 
+    } else {
+        return int * factorial(int - 1);
+    }
+}
+
+// 2- Using ternary operator
+function factorial(int) {
+	/*
+    Source: https://edabit.com/challenge/GW5kYFCvGWDZ6TRxd
+    Create a function that takes an integer and returns the factorial of that integer. 
+    That is, the integer multiplied by all positive lower integers.
+    Examples: 
+        factorial(3) ➞ 6
+        factorial(5) ➞ 120
+        factorial(13) ➞ 6227020800
+    Notes:
+        Assume all inputs are greater than or equal to 0.
+    */
+    return int === 0 ? 1 : int * factorial(int - 1);
+}

@@ -275,3 +275,18 @@ function sortDrinkByPrice(drinks) {
         sortDrinkByPrice(drinks) ➞ [{name: "lime", price: 10}, {name: "lemonade", price: 50}]
     */
 }
+
+
+function factorial(int) {
+	/*
+    Source: https://edabit.com/challenge/GW5kYFCvGWDZ6TRxd
+    Create a function that takes an integer and returns the factorial of that integer. 
+    That is, the integer multiplied by all positive lower integers.
+    Examples: 
+        factorial(3) ➞ 6
+        factorial(5) ➞ 120
+        factorial(13) ➞ 6227020800
+    Notes:
+        Assume all inputs are greater than or equal to 0.
+    */
+}
