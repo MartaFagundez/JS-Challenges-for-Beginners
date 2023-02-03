@@ -290,3 +290,12 @@ function factorial(int) {
         Assume all inputs are greater than or equal to 0.
     */
 }
+
+
+function numberToArrayOfDigits(int) {
+    /*
+    Source: https://www.jschallenger.com/javascript-practice/javascript-fundamentals/split-number-into-digits
+    Write a function that takes a number (int) as argument. Split int into its individual digits and return them in an array. 
+    Tipp: you might want to change the type of the number for the splitting.
+    */
+}
