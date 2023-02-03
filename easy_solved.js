@@ -471,3 +471,12 @@ function numberToArrayOfDigits(int) {
     */
     return Array.from(String(int), element => Number(element));
 }
+
+
+function sumOfDigits(int) {
+    /*
+    Write a function that takes a number (int) as argument. Split int into its individual digits and return the sum of them. 
+    */
+    let arrayOfDigits = Array.from(String(int), element => Number(element));
+    return arrayOfDigits.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+}

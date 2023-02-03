@@ -299,3 +299,10 @@ function numberToArrayOfDigits(int) {
     Tipp: you might want to change the type of the number for the splitting.
     */
 }
+
+
+function sumOfDigits(int) {
+    /*
+    Write a function that takes a number (int) as argument. Split int into its individual digits and return the sum of them. 
+    */
+}
